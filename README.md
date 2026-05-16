@@ -1,5 +1,14 @@
 # Bug Bounty Agent
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Cybersecurity-Red%20Team-darkred?style=for-the-badge&logo=tryhackme&logoColor=white" alt="Red Team">
+  <img src="https://img.shields.io/badge/Google%20Gemini-AI%20Core-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Go-Simulations-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
+  <img src="https://img.shields.io/badge/Python-Exploits-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status">
+</p>
+
 Bug Bounty Agent is an interactive Red Team simulation dashboard and offensive security assistant. Built with a Hybrid Intercept architecture, it combines instant local conceptual explanations with backend-driven Proof-of-Concept (PoC) extraction via Google Gemini AI.
 
 Developed specifically for authorized offensive security operations, penetration testing, and bug bounty hunting workflows.
