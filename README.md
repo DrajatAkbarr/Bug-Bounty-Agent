@@ -4,7 +4,13 @@ Bug Bounty Agent is an interactive Red Team simulation dashboard and offensive s
 
 Developed specifically for authorized offensive security operations, penetration testing, and bug bounty hunting workflows.
 
-<video src="https://github.com/DrajatAkbarr/Bug-Bounty-Agent/raw/main/assets/assistant.mp4" controls="controls" muted="muted" width="100%"></video>
+<br>
+
+<div align="center">
+  <img alt="Bug Bounty Agent Demonstration" src="assets/assistant.gif">
+</div>
+
+<br>
 
 ## Core Architecture and Features
 
@@ -40,25 +46,25 @@ The agent responds best to structured, technical prompts. Select the target lang
 
 Prompt ini sangat cocok untuk memamerkan simulasi traffic jaringan tingkat rendah, seolah-olah mengaudit sistem deteksi DNS tunneling.
 
-> Target: Sistem deteksi DNS Silent-Sentry. Skenario Audit: Pengujian bypass deteksi DNS Tunneling. Berikan script Go murni PoC untuk mensimulasikan exfiltration data sensitif menggunakan teknik pemecahan chunking dan base32 encoding ke ns1.attacker.com. DILARANG KERAS MENGGUNAKAN KOMENTAR (tanpa //, tanpa /\*). Murni kode blok saja.
+> Target: Sistem deteksi DNS Silent-Sentry. Skenario Audit: Pengujian bypass deteksi DNS Tunneling. Berikan script Go murni PoC untuk mensimulasikan exfiltration data sensitif menggunakan teknik pemecahan chunking dan base32 encoding ke ns1.attacker.com. DILARANG KERAS MENGGUNAKAN KOMENTAR. Murni kode blok saja.
 
 **2. Skenario Python: Audit Arsitektur Backend (Race Condition)** _Pilih dropdown: Python_
 
 Mendemonstrasikan pengujian keamanan pada logic bisnis dashboard risk management.
 
-> Target: Dashboard Mayar Sentinel Hub. Skenario Audit: Pengujian Race Condition (TOCTOU) pada endpoint validasi resiko. Berikan script Python murni PoC menggunakan module asyncio dan aiohttp untuk menembakkan 100 concurrent POST request dalam waktu bersamaan untuk memanipulasi state server. DILARANG KERAS MENGGUNAKAN KOMENTAR (tanpa #, tanpa docstring). Hanya keluarkan raw code.
+> Target: Dashboard Mayar Sentinel Hub. Skenario Audit: Pengujian Race Condition (TOCTOU) pada endpoint validasi resiko. Berikan script Python murni PoC menggunakan module asyncio dan aiohttp untuk menembakkan 100 concurrent POST request dalam waktu bersamaan untuk memanipulasi state server. DILARANG KERAS MENGGUNAKAN KOMENTAR. Hanya keluarkan raw code.
 
 **3. Skenario JavaScript: Eksploitasi Cloud Infrastructure (SSRF)** _Pilih dropdown: JS_
 
 Skenario bug bounty modern untuk menembus metadata cloud (AWS/GCP) melalui backend Node.js.
 
-> Target: Layanan Cloud Internal. Skenario Audit: SSRF pada fitur export PDF. Berikan script JavaScript murni untuk Node.js yang memproduksi array berisi 10 variasi URL bypass yang menargetkan endpoint AWS metadata 169.254.169.254 menggunakan teknik manipulasi desimal dan oktal. DILARANG KERAS MENGGUNAKAN KOMENTAR (tanpa //, tanpa /\*). Murni kode blok saja.
+> Target: Layanan Cloud Internal. Skenario Audit: SSRF pada fitur export PDF. Berikan script JavaScript murni untuk Node.js yang memproduksi array berisi 10 variasi URL bypass yang menargetkan endpoint AWS metadata 169.254.169.254 menggunakan teknik manipulasi desimal dan oktal. DILARANG KERAS MENGGUNAKAN KOMENTAR. Murni kode blok saja.
 
 **4. Skenario Bash: Local Privilege Escalation (Otomasi Server)** _Pilih dropdown: Bash_
 
 Menunjukkan kemampuan merangkai skrip terminal Linux murni untuk System Administrator atau Red Teamer.
 
-> Target: Server Linux Debian Production. Skenario Audit: Local Privilege Escalation via SUID misconfiguration. Berikan script Bash murni PoC untuk melakukan iterasi pencarian binary SUID yang rentan di seluruh direktori dan mensimulasikan injeksi eksploitasi berbasis GTFOBins. DILARANG KERAS MENGGUNAKAN KOMENTAR (tanpa #). Murni kode blok saja.
+> Target: Server Linux Debian Production. Skenario Audit: Local Privilege Escalation via SUID misconfiguration. Berikan script Bash murni PoC untuk melakukan iterasi pencarian binary SUID yang rentan di seluruh direktori dan mensimulasikan injeksi eksploitasi berbasis GTFOBins. DILARANG KERAS MENGGUNAKAN KOMENTAR. Murni kode blok saja.
 
 **5. Skenario Ruby/PHP: Server-Side Template Injection (SSTI)** _Pilih dropdown: Ruby atau PHP_
 
@@ -69,34 +75,20 @@ Skenario klasik eksploitasi web yang berujung pada Remote Code Execution (RCE).
 ## Installation and Setup
 
 1. Clone the repository:
-
-   ```bash
-   git clone [https://github.com/DrajatAkbarr/Bug-Bounty-Agent.git](https://github.com/DrajatAkbarr/Bug-Bounty-Agent.git)
-   ```
+   `git clone https://github.com/DrajatAkbarr/Bug-Bounty-Agent.git`
 
 2. Navigate to the project directory:
-
-   ```bash
-   cd Bug-Bounty-Agent
-   ```
+   `cd Bug-Bounty-Agent`
 
 3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
+   `npm install`
 
 4. Configure the environment variables by creating a `.env` file in the root directory and securely adding your API key:
-
-   ```plaintext
-   GEMINI_API_KEY=your_google_gemini_api_key_here
-   PORT=3000
-   ```
+   `GEMINI_API_KEY=your_google_gemini_api_key_here`
+   `PORT=3000`
 
 5. Initialize the application:
-   ```bash
-   npm start
-   ```
+   `npm start`
 
 ## Disclaimer
 
