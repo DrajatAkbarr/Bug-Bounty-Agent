@@ -1,0 +1,12 @@
+{
+  "Broken Access Control": "Inadequate restrictions on user actions and data access, often exacerbated by complex APIs and microservices.",
+  "Cryptographic Failures": "Insecure transmission or storage of sensitive data (passwords, PII) due to weak/missing encryption.",
+  "Injection Attacks": "Malicious input that manipulates SQL queries, OS commands, or API calls.",
+  "Insecure Design": "Structural architectural flaws that, rather than implementation errors, fail to secure workflows.",
+  "Security Misconfigurations": "Default credentials, unnecessary features, and misconfigured cloud buckets.",
+  "Vulnerable/Outdated Components": "Continued, high-risk reliance on libraries/frameworks with known security holes.",
+  "Auth & Session Failures": "Weak passwords and missing multi-factor authentication (MFA) allowing unauthorized access.",
+  "Software & Data Integrity Failures": "Attacks on CI/CD pipelines and unsigned updates, such as in supply chain attacks.",
+  "Logging & Monitoring Failures": "Inability to detect security breaches or monitor for malicious activity effectively.",
+  "Server-Side Request Forgery": "Flaws allowing an attacker to force the server to make arbitrary requests to internal or external systems."
+}

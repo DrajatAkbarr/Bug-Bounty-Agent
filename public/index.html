@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bounty Assistant</title>
+    <link rel="stylesheet" href="/style.css?v=1.4">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+</head>
+<body>
+    <div id="terminal-container">
+        <div id="terminal-header">
+            <div class="window-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="terminal-title">dzakwan@offensive-sec:~</div>
+        </div>
+        <div id="chat-container">
+            <div class="welcome-screen">
+                <div class="header-divider">
+                    <span class="header-title">System.Initiate_</span>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="ascii-container">
+                    <pre class="ascii-art">
+ ██████╗ ██╗   ██╗ ██████╗     ██████╗  ██████╗ ██╗   ██╗███╗   ██╗████████╗██╗   ██╗
+ ██╔══██╗██║   ██║██╔════╝     ██╔══██╗██╔═══██╗██║   ██║████╗  ██║╚══██╔══╝╚██╗ ██╔╝
+ ██████╔╝██║   ██║██║  ███╗    ██████╔╝██║   ██║██║   ██║██╔██╗ ██║   ██║    ╚████╔╝ 
+ ██╔══██╗██║   ██║██║   ██║    ██╔══██╗██║   ██║██║   ██║██║╚██╗██║   ██║     ╚██╔╝  
+ ██████╔╝╚██████╔╝╚██████╔╝    ██████╔╝╚██████╔╝╚██████╔╝██║ ╚████║   ██║      ██║   
+ ╚═════╝  ╚═════╝  ╚═════╝     ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝      ╚═╝   
+
+  █████╗ ███████╗███████╗██╗███████╗████████╗ █████╗ ███╗   ██╗████████╗
+ ██╔══██╗██╔════╝██╔════╝██║██╔════╝╚══██╔══╝██╔══██╗████╗  ██║╚══██╔══╝
+ ███████║███████╗███████╗██║███████╗   ██║   ███████║██╔██╗ ██║   ██║   
+ ██╔══██║╚════██║╚════██║██║╚════██║   ██║   ██╔══██║██║╚██╗██║   ██║   
+ ██║  ██║███████║███████║██║███████║   ██║   ██║  ██║██║ ╚████║   ██║   
+ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   
+                    </pre>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dashboard-left">
+                        <div class="welcome-greeting">Welcome back, Dzakwan_</div>
+                        
+                        <div class="kali-container">
+                            <pre class="kali-logo">
+               ██████████                                              
+                            ██████                                     
+                                  ████                                 
+                   ███████████████████                                 
+     ███                            █                                  
+                          █████       █                                
+                    ███                ██                              
+                █                       ██████████                     
+            █                        ████         █████                
+        █                           ██                 ████            
+                                   ██                     ████         
+                                  ███                      ███         
+                                  ██                          ████     
+                                  ███                                  
+                                   ███                                 
+                                    ███                                
+                                      █████                            
+                                          ████████████████             
+                                                       ███ ████        
+                                                           █    ██     
+                                                             █     █   
+                                                               █       
+                                                                █      
+                                                                 █     
+                                                                  █    
+                                                                       
+                                                                   █   
+                            </pre>
+                        </div>
+
+                        <div class="branding-box">
+                            <svg class="branding-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                                <path d="M2 17L12 22L22 17V7L12 12L2 7V17Z" fill="currentColor"/>
+                            </svg>
+                            <span class="branding-text">Drajat teams</span>
+                        </div>
+
+                        <div class="session-meta">
+                            Gemini 3.1 &nbsp;·&nbsp; Root Access &nbsp;·&nbsp; v1.0.6
+                            <br>
+                            <span class="meta-path">~/offensive/terminal</span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-right">
+                        <div class="info-section">
+                            <div class="section-label">TIPS_FOR_DEPLOYMENT</div>
+                            <div class="section-body">Specify your tech stack and vulnerability target. Use the language selector for optimized compiler output.</div>
+                        </div>
+                        
+                        <div class="grid-line"></div>
+                        
+                        <div class="info-section">
+                            <div class="section-label">RECENT_LOGS</div>
+                            <div class="section-body muted">No active sessions detected in database.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-line"></div>
+            </div>
+        </div>
+        <div id="input-container">
+            <select id="language-selector">
+                <option value="go">Go</option>
+                <option value="rust">Rust</option>
+                <option value="python">Python</option>
+                <option value="bash">Bash</option>
+                <option value="javascript">JS</option>
+                <option value="ruby">Ruby</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+            </select>
+            <span class="prompt-symbol">❯</span>
+            <textarea id="user-input" rows="1" autofocus spellcheck="false"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
