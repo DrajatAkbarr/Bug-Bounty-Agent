@@ -4,13 +4,7 @@ Bug Bounty Agent is an interactive Red Team simulation dashboard and offensive s
 
 Developed specifically for authorized offensive security operations, penetration testing, and bug bounty hunting workflows.
 
-<br>
-
-<div align="center">
-  <video src="./assets/assistant.mp4" width="100%" controls autoplay loop muted></video>
-</div>
-
-<br>
+![Demonstration Video](./assets/assistant.mp4)
 
 ## Core Architecture & Features
 
